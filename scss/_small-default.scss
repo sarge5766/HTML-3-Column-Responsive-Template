@@ -1,0 +1,59 @@
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+h2 {
+    font-weight: bold;
+}
+
+p {
+    margin-top: 1em;
+}
+
+body {
+    background-color: #2196F3;
+    background-color: bisque;
+    background-color: $primary-bg;
+    background-color: green;
+    padding: 10px;
+    display: grid;
+    font-family: 'Lato', sans-serif;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'header'
+    'nav'
+    'main'
+    'sidebar'
+    'footer';
+    gap: 1rem;
+    font-size: 1em;
+}
+
+header, nav, main, sidebar, footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $secondary-bg;
+    padding: 1rem;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+sidebar {
+    grid-area: sidebar; 
+}
+
+footer {
+    grid-area: footer;
+}

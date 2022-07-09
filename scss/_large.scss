@@ -1,0 +1,8 @@
+body {
+    font-size: 1.5em;
+    grid-template-columns:repeat(6, 1fr) ;
+    grid-template-areas:
+    'header header header header header header'
+    'nav main main main sidebar sidebar'
+    'footer footer footer footer footer footer';
+}
